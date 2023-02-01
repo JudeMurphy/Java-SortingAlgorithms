@@ -86,23 +86,6 @@ public class SortTester
         }
 		return num;
 	}
-	
-	public static int[] mergeSort(int[] A) 
-	{
-        if (A.length > 1) 
-        {
-            int q = A.length/2;
-
-            int[] leftArray = Arrays.copyOfRange(A, 0, q);
-            int[] rightArray = Arrays.copyOfRange(A, q, A.length);
-
-            mergeSort(leftArray);
-            mergeSort(rightArray);
-
-            merge(A,leftArray,rightArray);
-        }
-		return A;
-    }
 
     public static int[] mergeSort(int[] A) {
   // Base case: if the array has only one element, return it
